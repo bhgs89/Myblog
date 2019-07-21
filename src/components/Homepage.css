@@ -1,5 +1,13 @@
+.ui.menu {
+  display: flex;
+}
+
 .ui.secondary.pointing.menu {
-  background-color: black;
+  background-color: #1B1C1D ;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-width: 2px;
 }
 
 .ui.secondary.pointing.menu .active.item {
@@ -18,4 +26,15 @@
 
 .ui.secondary.pointing.menu a.item:hover {
   color: white;
+}
+
+.ui.button {
+  background-color: #1B1C1D;
+  color: white;
+  border: 1px solid white;
+}
+
+.ui.button:hover {
+  background-color: white;
+  color: #1B1C1D;
 }
