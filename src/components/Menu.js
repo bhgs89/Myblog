@@ -15,7 +15,7 @@ const Menu = (props) => {
       </a>
       <div className="right menu">
         <a className="ui item">
-          Contact me
+          Contact me or not
         </a>
       </div>
     </div>
