@@ -1,0 +1,21 @@
+.ui.secondary.pointing.menu {
+  background-color: black;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  color: white;
+  border-color: white;
+}
+
+.ui.secondary.pointing.menu .item {
+  color: grey;
+}
+
+.ui.secondary.pointing.menu .active.item:hover {
+  border-color: white;
+  color: white;
+}
+
+.ui.secondary.pointing.menu a.item:hover {
+  color: white;
+}
