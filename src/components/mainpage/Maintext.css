@@ -1,0 +1,19 @@
+.ui.text.container {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  z-index: 100;
+}
+
+.ui.invented.header {
+  margin-top: 150px;
+  color: white;
+  font-size: 60px;
+}
+
+img {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 0;
+}
