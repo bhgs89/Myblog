@@ -16,6 +16,7 @@ class Menu extends React.Component {
       button1: 'active item',
       button2: 'item',
       button3: 'item',
+      modal: false,
     });
   };
 
@@ -24,6 +25,7 @@ class Menu extends React.Component {
       button1: 'item',
       button2: 'active item',
       button3: 'item',
+      modal: false,
     });
   };
 
@@ -32,6 +34,7 @@ class Menu extends React.Component {
       button1: 'item',
       button2: 'item',
       button3: 'active item',
+      modal: false,
     });
   };
 

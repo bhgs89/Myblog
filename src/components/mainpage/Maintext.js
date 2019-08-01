@@ -8,7 +8,7 @@ const Maintext = props => {
       className="ui inverted vertical masthead center aligned segment"
       style={{ height: '700px' }}
     >
-      <img src={home_main} alt="Main Picture" />
+      <img src={home_main} alt="Main" />
       <div className="ui text container">
         <h1 className="ui invented header">Create your life</h1>
       </div>

@@ -6,9 +6,16 @@ const ContactMe = props => {
   return ReactDOM.createPortal(
     <div>
       <div className="modal_ui">
-        <i class="envelope outline icon" />
-        <i class="github icon" />
-        <i class="linkedin icon" />
+        {/* Figure out sending email*/}
+        <i class="big envelope outline icon" />
+        <i
+          class="big github icon"
+          onClick={() => window.open('https://github.com/bhgs89')}
+        />
+        <i
+          class="big linkedin icon"
+          onClick={() => window.open('https://www.linkedin.com/in/baekhan')}
+        />
       </div>
     </div>,
     document.querySelector('#contact'),

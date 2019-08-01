@@ -4,7 +4,6 @@ import Menu from './Menu';
 import Mainpage from './mainpage/Mainpage';
 import Aboutpage from './aboutme/Aboutpage';
 import Careerpage from './career/Careerpage';
-import ContactMe from './ContactMe';
 
 class App extends React.Component {
   render() {

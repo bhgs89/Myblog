@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Careerpage = () => {
-  return <div>Careerpage</div>;
+  return <div>Coming Soon</div>;
 };
 
 export default Careerpage;
