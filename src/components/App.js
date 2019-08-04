@@ -1,34 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Menu from './Menu';
-import Mainpage from './mainpage/Mainpage';
-import Aboutpage from './aboutme/Aboutpage';
-import Careerpage from './career/Careerpage';
+import RoutePath from './RoutePath';
+import { ModalProvider } from '../contexts/ModalContext';
+import { ButtonProvider } from '../contexts/ButtonContext';
 
-class App extends React.Component {
-  render() {
-    return (
+const App = () => {
+  return (
+    <ModalProvider>
       <div className="ui container" style={{ width: '100%' }}>
         <BrowserRouter>
-          <div
-            className="menu"
-            style={{
-              position: 'relative',
-              backgroundColor: '#1b1c1d',
-              height: '60px',
-            }}
-          >
+          <ButtonProvider>
             <Menu />
-          </div>
-          <div>
-            <Route path="/" exact component={Mainpage} />
-            <Route path="/aboutme" exact component={Aboutpage} />
-            <Route path="/career" exact component={Careerpage} />
-          </div>
+          </ButtonProvider>
+          <RoutePath />
         </BrowserRouter>
       </div>
-    );
-  }
-}
+    </ModalProvider>
+  );
+};
 
 export default App;

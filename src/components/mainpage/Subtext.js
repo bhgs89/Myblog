@@ -1,5 +1,4 @@
 import React from 'react';
-import profile from '../../pics/profile.jpg';
 import './Subtext.css';
 
 const Subtext = () => {
