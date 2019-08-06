@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Menu from './Menu';
 import RoutePath from './RoutePath';
+import Footer from './Footer';
 import { ModalProvider } from '../contexts/ModalContext';
 import { ButtonProvider } from '../contexts/ButtonContext';
 
@@ -13,6 +14,7 @@ const App = () => {
           <BrowserRouter>
             <Menu />
             <RoutePath />
+            <Footer />
           </BrowserRouter>
         </div>
       </ButtonProvider>

@@ -14,10 +14,14 @@ const MenuContainer = styled.div`
 const MenuBar = styled.div`
   &.ui.secondary.pointing.menu {
     background-color: #1b1c1d;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 225px;
     margin-right: 225px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-width: 2px;
+    border-radius: 10px;
     height: 50px;
     position: fixed;
     display: flex;
@@ -38,7 +42,7 @@ const MenuButton = styled(Link)`
 `;
 const RightMenu = styled.div`
   position: fixed;
-  right: 8.5%;
+  right: 9%;
 
   @media only screen and (max-width: 700px) {
     visibility: hidden;
@@ -50,7 +54,7 @@ const ContactButton = styled.button`
   border: 2px solid white;
   border-radius: 5px
   height: 35px;
-  margin-top: 10px;
+  margin-top: 8px;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: bold;
   :hover {

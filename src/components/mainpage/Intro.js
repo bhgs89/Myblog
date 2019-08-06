@@ -12,6 +12,7 @@ const IntroContainer = styled.div`
 `;
 const Heder = styled.h1`
   text-decoration: underline;
+  text-transform: uppercase;
   font-size: 250%;
 `;
 const MainContent = styled.p`
@@ -51,7 +52,7 @@ const Intro = () => {
       <MainContent>(Los Angeles / OC based)</MainContent>
       <SubHeader>Objective</SubHeader>
       <MainContent>To make a better life, Be a better programmer</MainContent>
-      <MainContent>From front-end developer to Fullstack developer</MainContent>
+      <MainContent>From front-end developer to fullstack developer</MainContent>
       <SubHeader>Education</SubHeader>
       <MainContent>Computer Science</MainContent>
       <MainContent>California State University, Northridge</MainContent>
