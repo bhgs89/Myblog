@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import ContactMe from './ContactMe';
 import styled from 'styled-components';
-import './Menu.css';
 import { ModalContext } from '../contexts/ModalContext';
 import { ButtonContext } from '../contexts/ButtonContext';
 
@@ -11,6 +10,39 @@ const MenuContainer = styled.div`
   position: relative;
   background-color: #1b1c1d;
   height: 60px;
+`;
+const MenuBar = styled.div`
+  &.ui.secondary.pointing.menu {
+    background-color: #1b1c1d;
+    margin-top: 0px;
+    margin-left: 225px;
+    margin-right: 225px;
+    border-width: 2px;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 50;
+    width: 80%;
+  }
+`;
+const MenuButton = styled(Link)`
+  &&&&&& {
+    color: ${props => (props.className === 'item' ? 'grey' : 'white')};
+    border-color: ${props => (props.className === 'item' ? null : 'white')};
+    :hover {
+      border-color: ${props => (props.className === 'item' ? null : 'white')};
+      color: ${props => (props.className === 'item' ? 'white' : 'white')};
+    }
+  }
+`;
+const RightMenu = styled.div`
+  position: fixed;
+  right: 8.5%;
+
+  @media only screen and (max-width: 700px) {
+    visibility: hidden;
+  }
 `;
 const ContactButton = styled.button`
   background-color: ${props => (props.modal ? 'white' : '#1b1c1d')};
@@ -30,19 +62,6 @@ const ContactButton = styled.button`
     transform: translateY(4px);
   }
 `;
-// const MenuBar = styled.div`
-//   background-color: #1b1c1d;
-//   margin-top: 0px;
-//   margin-left: 225px;
-//   margin-right: 225px;
-//   border-width: 2px;
-//   height: 50px;
-//   position: fixed;
-//   display: flex;
-//   flex-direction: row;
-//   z-index: 50;
-//   width: 80%;
-// `;
 
 const Menu = props => {
   const [modal, setModal] = useContext(ModalContext);
@@ -121,21 +140,25 @@ const Menu = props => {
 
   return (
     <MenuContainer onClick={closeContact}>
-      <div className="ui secondary pointing menu">
-        <Link to="/" className={button.bt1} onClick={onClickHome}>
+      <MenuBar className="ui secondary pointing menu">
+        <MenuButton to="/" className={button.bt1} onClick={onClickHome}>
           Home
-        </Link>
-        <Link to="/aboutme" className={button.bt2} onClick={onClickAboutMe}>
+        </MenuButton>
+        <MenuButton
+          to="/aboutme"
+          className={button.bt2}
+          onClick={onClickAboutMe}
+        >
           About Me
-        </Link>
-        <Link to="/career" className={button.bt3} onClick={onClickCareer}>
+        </MenuButton>
+        <MenuButton to="/career" className={button.bt3} onClick={onClickCareer}>
           Careers
-        </Link>
-        <div className="right menu" onClick={e => e.stopPropagation()}>
+        </MenuButton>
+        <RightMenu onClick={e => e.stopPropagation()}>
           <ContactButton onClick={contactButton}>Contact Me</ContactButton>
           {renderContact()}
-        </div>
-      </div>
+        </RightMenu>
+      </MenuBar>
     </MenuContainer>
   );
 };
