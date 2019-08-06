@@ -4,7 +4,7 @@ export const ButtonContext = React.createContext();
 
 export const ButtonProvider = ({ children }) => {
   const [button, setButton] = useState({
-    bt1: 'active item',
+    bt1: 'item',
     bt2: 'item',
     bt3: 'item',
   });

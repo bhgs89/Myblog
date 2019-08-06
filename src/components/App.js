@@ -8,14 +8,14 @@ import { ButtonProvider } from '../contexts/ButtonContext';
 const App = () => {
   return (
     <ModalProvider>
-      <div className="ui container" style={{ width: '100%' }}>
-        <BrowserRouter>
-          <ButtonProvider>
+      <ButtonProvider>
+        <div className="ui container" style={{ width: '100%' }}>
+          <BrowserRouter>
             <Menu />
-          </ButtonProvider>
-          <RoutePath />
-        </BrowserRouter>
-      </div>
+            <RoutePath />
+          </BrowserRouter>
+        </div>
+      </ButtonProvider>
     </ModalProvider>
   );
 };

@@ -62,18 +62,13 @@ const ContactButton = styled.button`
     transform: translateY(4px);
   }
 `;
+// Style End
 
-const Menu = props => {
+const Menu = () => {
   const [modal, setModal] = useContext(ModalContext);
-  const [button, setButton] = useContext(ButtonContext);
+  const [button] = useContext(ButtonContext);
 
   const onClickHome = e => {
-    const home = {
-      bt1: 'active item',
-      bt2: 'item',
-      bt3: 'item',
-    };
-    setButton(home);
     setModal({
       contact: false,
       email: false,
@@ -81,12 +76,6 @@ const Menu = props => {
   };
 
   const onClickAboutMe = e => {
-    const about = {
-      bt1: 'item',
-      bt2: 'active item',
-      bt3: 'item',
-    };
-    setButton(about);
     setModal({
       contact: false,
       email: false,
@@ -94,12 +83,6 @@ const Menu = props => {
   };
 
   const onClickCareer = e => {
-    const career = {
-      bt1: 'item',
-      bt2: 'item',
-      bt3: 'active item',
-    };
-    setButton(career);
     setModal({
       contact: false,
       email: false,
