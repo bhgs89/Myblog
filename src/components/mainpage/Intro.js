@@ -27,7 +27,7 @@ const SubHeader = styled.h3`
 const LinkButton = styled.div`
   margin-top: 30px;
 `;
-const AboutButton = styled.button`
+const AboutButton = styled.span`
   font-size: 150%;
   background-color: black;
   border: none;
@@ -41,6 +41,9 @@ const AboutButton = styled.button`
   cursor: pointer;
   :hover {
     text-decoration: underline;
+  }
+  :active {
+    border: none;
   }
 `;
 

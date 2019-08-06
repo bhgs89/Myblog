@@ -86,13 +86,6 @@ const Menu = () => {
     });
   };
 
-  const onClickCareer = e => {
-    setModal({
-      contact: false,
-      email: false,
-    });
-  };
-
   const contactButton = e => {
     if (!modal.contact) {
       setModal({
@@ -131,15 +124,8 @@ const Menu = () => {
         <MenuButton to="/" className={button.bt1} onClick={onClickHome}>
           Home
         </MenuButton>
-        <MenuButton
-          to="/aboutme"
-          className={button.bt2}
-          onClick={onClickAboutMe}
-        >
+        <MenuButton to="/aboutme" className={button.bt2} onClick={onClickAboutMe}>
           About Me
-        </MenuButton>
-        <MenuButton to="/career" className={button.bt3} onClick={onClickCareer}>
-          Careers
         </MenuButton>
         <RightMenu onClick={e => e.stopPropagation()}>
           <ContactButton onClick={contactButton}>Contact Me</ContactButton>

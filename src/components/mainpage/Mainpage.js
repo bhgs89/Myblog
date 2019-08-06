@@ -12,7 +12,6 @@ const Mainpage = () => {
         setButton({
           bt1: 'active item',
           bt2: 'item',
-          bt3: 'item',
         });
       }
     };

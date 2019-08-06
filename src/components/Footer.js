@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const FooterContainer = styled.div`
   position: relative;
   height: 190px;
+  border-top: 1px solid black;
 `;
 const ContactInfo = styled.div`
   text-align: center;
@@ -35,13 +36,20 @@ const InlineContent = styled.div`
   padding: 10px;
   bottom: 0px;
 `;
+const EmailTag = styled.a`
+  color: black;
+  :hover {
+    color: black;
+  }
+`;
+// Style End
 
 const Footer = () => {
   return (
     <FooterContainer>
       <ContactInfo>
         <Email>
-          <p>han.baek.program@gmail.com</p>
+          <EmailTag href="mailto: han.baek.program@gmail.com">han.baek.program@gmail.com</EmailTag>
         </Email>
         <Phone>
           <p>+1 (818) 963 - 1903</p>
