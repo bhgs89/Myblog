@@ -21,26 +21,23 @@ const Phylosophy = styled.div`
 const PhylosophyContent = styled.p`
   text-align: left;
   text-indent: 25px;
-  font-size: 18px;
+  font-size: 19px;
+  letter-spacing: 2px;
 `;
 // Style End
 
 const ContentA = () => {
   return (
     <ContentContainer>
-      <Heder>Computer Phylosophy</Heder>
+      <Heder>Computer philosophie</Heder>
       <Phylosophy>
         <PhylosophyContent>
-          My musical philosophy is that music expresses myself on another level,
-          it expresses my creative/imaginative side and helps me know what a
-          composer was thinking or feeling when the music was written. Music is
-          a powerful way for expressing emotions and capturing our internal
-          experience of life. The key is that music helps us become more honest
-          with ourselves. Music moves us, inspires us and often we feel
-          connected to it. It helps me connect on a way that verbal or written
-          communication can’t do, and helps me understand and capture composers’
-          moment on when they wrote the piece. For my students I aspire to use
-          music to move and inspire them
+          My computer philosophie is that computer science is necessary to improve our lives. It
+          will be more important in the future, because we cannot live without its system. The most
+          people only know how to use their software. They don't know how it works, because they
+          don't need to know it. Knowing how it works is our (Programmers) job! Therefore, we need
+          to keep study our field. To make better world! To make better life! My study is going to
+          be endless.
         </PhylosophyContent>
       </Phylosophy>
     </ContentContainer>
