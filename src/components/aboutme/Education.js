@@ -15,7 +15,7 @@ const Header = styled.h2`
 `;
 const School = styled.div`
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 250px auto;
   grid-column-gap: 15px;
 `;
 const ImageContainer = styled.div`
@@ -30,8 +30,11 @@ const SchoolContent = styled.div`
 `;
 const List = styled.ul`
   list-style-position: inside;
+  font-size: 17px;
 `;
-
+const ListElement = styled.li`
+  margin-bottom: 8px;
+`;
 // Style End
 
 const Education = () => {
@@ -43,10 +46,10 @@ const Education = () => {
           <Image src={csun_logo} alt="csun logo" />
         </ImageContainer>
         <SchoolContent>
-          <h4>California State University, Northridge (2017 ~ 2019)</h4>
+          <h3>California State University, Northridge (2017 ~ 2019)</h3>
           <List>
-            <li>Undergraduated in May, 2019</li>
-            <li>Bachelor of Science, Computer Science</li>
+            <ListElement>Undergraduated in May, 2019</ListElement>
+            <ListElement>Bachelor of Science, Computer Science</ListElement>
           </List>
         </SchoolContent>
       </School>
@@ -55,10 +58,10 @@ const Education = () => {
           <Image src={smc_logo} alt="smc logo" />
         </ImageContainer>
         <SchoolContent>
-          <h4>Santa Monica College (2013 ~ 2017)</h4>
+          <h3>Santa Monica College (2013 ~ 2017)</h3>
           <List>
-            <li>Computer Science Major (2015 ~ 2017)</li>
-            <li>Film Major (2013 ~ 2015)</li>
+            <ListElement>Computer Science Major (2015 ~ 2017)</ListElement>
+            <ListElement>Film Major (2013 ~ 2015)</ListElement>
           </List>
         </SchoolContent>
       </School>

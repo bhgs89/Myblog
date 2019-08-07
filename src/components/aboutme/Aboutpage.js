@@ -2,13 +2,14 @@ import React, { useContext, useEffect } from 'react';
 import { ButtonContext } from '../../contexts/ButtonContext';
 import styled from 'styled-components';
 import IntroSection from './IntroSection';
+import MajorSection from './MajorSection';
 import InfoSection from './InfoSection';
 
 // Style
 const AboutContainer = styled.div`
   width: 100%;
   display: grid;
-  background-color: #f0f0f5;
+  background-color: white;
 `;
 // Style End
 
@@ -30,6 +31,7 @@ const Aboutpage = () => {
   return (
     <AboutContainer>
       <IntroSection />
+      <MajorSection />
       <InfoSection />
     </AboutContainer>
   );

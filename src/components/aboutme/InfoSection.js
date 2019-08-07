@@ -16,7 +16,7 @@ const EducationContainer = styled.div`
   padding-top: 30px;
 `;
 const CareerContainer = styled.div`
-  background-color: white;
+  background-color: #f0f0f5;
   color: black;
   text-align: center;
   padding-top: 30px;

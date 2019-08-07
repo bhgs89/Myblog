@@ -29,6 +29,10 @@ const ProfileContent = styled.div`
   padding-top: 40px;
   text-align: left;
 `;
+const Introduction = styled.div`
+  font-size: 16px;
+  font-weight: 700px;
+`;
 // Style End
 
 const IntroSection = () => {
@@ -39,13 +43,15 @@ const IntroSection = () => {
       </ImageContainer>
       <ProfileContent>
         <h1>Hello</h1>
-        <p>I am Han(gwonsok) Baek.</p>
-        <p />
-        <p>I undergraduated from California State University, Northridge in 2019</p>
-        <p>I born in Korean and moved to USA since I was 18</p>
-        <p>I discharged from Korean Air Force Army</p>
-        <p>I transferred from Santa Monica College to CSUN</p>
-        <p>I undergraduated from California State University, Northridge in 2019</p>
+        <Introduction>
+          <p>I am Han(gwonsok) Baek.</p>
+          <p />
+          <p>I undergraduated from California State University, Northridge in 2019</p>
+          <p>I born in Korean and moved to USA since I was 18</p>
+          <p>EDIT!! I discharged from Korean Air Force Army</p>
+          <p>EDIT!! I transferred from Santa Monica College to CSUN</p>
+          <p>EDIT!! I undergraduated from California State University, Northridge in 2019</p>
+        </Introduction>
       </ProfileContent>
     </IntroContainer>
   );
