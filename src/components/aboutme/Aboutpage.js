@@ -25,6 +25,7 @@ const Aboutpage = () => {
         });
       }
     };
+    window.scrollTo(0, 0);
     changeButton();
   }, [button, setButton]);
 
