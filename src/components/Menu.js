@@ -7,7 +7,6 @@ import { ButtonContext } from '../contexts/ButtonContext';
 
 // Style
 const MenuContainer = styled.div`
-  position: relative;
   background-color: #1b1c1d;
   height: 60px;
 `;
@@ -28,6 +27,17 @@ const MenuBar = styled.div`
     flex-direction: row;
     z-index: 50;
     width: 80%;
+
+    @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+      margin: 0;
+      left: 30px;
+      width: 350px;
+    }
+    @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+      margin: 0;
+      left: 120px;
+      width: 650px;
+    }
   }
 `;
 const MenuButton = styled(Link)`
@@ -124,7 +134,11 @@ const Menu = () => {
         <MenuButton to="/" className={button.bt1} onClick={onClickHome}>
           Home
         </MenuButton>
-        <MenuButton to="/aboutme" className={button.bt2} onClick={onClickAboutMe}>
+        <MenuButton
+          to="/aboutme"
+          className={button.bt2}
+          onClick={onClickAboutMe}
+        >
           About Me
         </MenuButton>
         <RightMenu onClick={e => e.stopPropagation()}>
