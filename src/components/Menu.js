@@ -30,12 +30,14 @@ const MenuBar = styled.div`
 
     @media only screen and (min-device-width: 411px) and (orientation: portrait) {
       margin: 0;
+      top: 10px;
       left: 30px;
       width: 350px;
     }
     @media only screen and (min-device-width: 731px) and (orientation: landscape) {
       margin: 0;
-      left: 120px;
+      top: 10px;
+      left: 40px;
       width: 650px;
     }
   }

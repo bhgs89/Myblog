@@ -48,7 +48,7 @@ const Header = styled.h1`
     font-size: 20px;
     left: 180px;
     top: 140px;
-    width: 300px;
+    width: 200px;
     height: 100px;
   }
   @media only screen and (min-device-width: 731px) and (orientation: landscape) {
