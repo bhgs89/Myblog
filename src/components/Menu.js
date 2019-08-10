@@ -55,10 +55,6 @@ const MenuButton = styled(Link)`
 const RightMenu = styled.div`
   position: fixed;
   right: 9%;
-
-  @media only screen and (max-width: 700px) {
-    visibility: hidden;
-  }
 `;
 const ContactButton = styled.button`
   background-color: ${props => (props.modal ? 'white' : '#1b1c1d')};
