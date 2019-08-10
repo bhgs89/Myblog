@@ -38,7 +38,7 @@ const MenuBar = styled.div`
       margin: 0;
       top: 10px;
       left: 40px;
-      width: 575px;
+      width: 600px;
     }
   }
 `;

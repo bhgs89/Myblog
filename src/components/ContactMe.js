@@ -21,9 +21,6 @@ const ModalDiv = styled.div`
   opacity: 1;
   z-index: 250;
   margin-right: 7%;
-  @media only screen and (max-width: 700px) {
-    visibility: hidden;
-  }
 `;
 const Icon = styled.i`
   width: 40px;

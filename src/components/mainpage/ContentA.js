@@ -37,11 +37,13 @@ const PhylosophyContent = styled.p`
   letter-spacing: 2px;
 
   @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    text-align: center;
     text-indent: 0;
     font-size: 12px;
     letter-spacing: 1px;
   }
   @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+    text-align: center;
     text-indent: 0;
     font-size: 15px;
     letter-spacing: 1px;
