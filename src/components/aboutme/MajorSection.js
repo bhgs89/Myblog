@@ -13,6 +13,12 @@ const MajorContainer = styled.div`
 const MajorContent = styled.div`
   padding-top: 80px;
   text-align: center;
+  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+    padding-top: 30px;
+  }
+  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    padding-top: 30px;
+  }
 `;
 const Languages = styled.div`
   display: grid;
@@ -24,6 +30,14 @@ const ImageContainer = styled.div`
   padding-left: 600px;
   padding-right: 600px;
   margin-bottom: 100px;
+  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
 const Row = styled.div`
   display: grid;

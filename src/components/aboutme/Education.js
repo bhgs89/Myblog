@@ -8,6 +8,7 @@ const Container = styled.div`
   padding-top: 20px;
   display: grid;
   grid-row-gap: 30px;
+  padding-bottom: 20px;
 `;
 const Header = styled.h2`
   text-transform: uppercase;
@@ -15,8 +16,8 @@ const Header = styled.h2`
 `;
 const School = styled.div`
   display: grid;
-  grid-template-columns: 250px auto;
-  grid-column-gap: 15px;
+  grid-template-columns: 2fr 4fr;
+  grid-column-gap: 20px;
 `;
 const ImageContainer = styled.div`
   text-align: right;
@@ -31,6 +32,13 @@ const SchoolContent = styled.div`
 const List = styled.ul`
   list-style-position: inside;
   font-size: 17px;
+  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    font-size: 10px;
+  }
 `;
 const ListElement = styled.li`
   margin-bottom: 8px;

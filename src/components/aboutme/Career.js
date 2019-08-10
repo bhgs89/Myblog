@@ -16,6 +16,17 @@ const Work = styled.div`
   display: grid;
   text-align: left;
   margin-left: 200px;
+  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+`;
+const Subject = styled.h3`
+  text-align: center;
 `;
 const List = styled.ul`
   list-style-position: inside;
@@ -32,17 +43,21 @@ const Career = () => {
     <Container>
       <Header>- Career -</Header>
       <Work>
-        <h3>Movie Assistant Producer</h3>
+        <Subject>Movie Assistant Producer</Subject>
         <List>
           <ListElement>6/12/2013 ~ 8/27/2013</ListElement>
-          <ListElement>Heartbreak Hotel (Taeyangeul Hyanghae Sswara) released on 2015</ListElement>
+          <ListElement>
+            Heartbreak Hotel (Taeyangeul Hyanghae Sswara) released on 2015
+          </ListElement>
         </List>
       </Work>
       <Work>
-        <h3>Republic of Korean Air Force</h3>
+        <Subject>Republic of Korean Air Force</Subject>
         <List>
           <ListElement>6/28/2010 ~ 7/8/2012</ListElement>
-          <ListElement>Discharged upon completing military service (Staff Sergeant)</ListElement>
+          <ListElement>
+            Discharged upon completing military service (Staff Sergeant)
+          </ListElement>
         </List>
       </Work>
     </Container>

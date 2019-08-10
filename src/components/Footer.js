@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Style
 const FooterContainer = styled.div`
   position: relative;
+  bottom: 0;
   height: 190px;
   border-top: 1px solid black;
 `;
@@ -49,7 +50,9 @@ const Footer = () => {
     <FooterContainer>
       <ContactInfo>
         <Email>
-          <EmailTag href="mailto: han.baek.program@gmail.com">han.baek.program@gmail.com</EmailTag>
+          <EmailTag href="mailto: han.baek.program@gmail.com">
+            han.baek.program@gmail.com
+          </EmailTag>
         </Email>
         <Phone>
           <p>+1 (818) 963 - 1903</p>
