@@ -7,8 +7,6 @@ import InfoSection from './InfoSection';
 
 // Style
 const AboutContainer = styled.div`
-  width: 100%;
-  display: grid;
   background-color: white;
 `;
 // Style End
