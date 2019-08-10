@@ -29,7 +29,7 @@ const Image = styled.img`
     height: 175px;
   }
   @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    left: 80px;
+    left: 60px;
     width: 600px;
     height: 300px;
   }
@@ -53,7 +53,7 @@ const Header = styled.h1`
   }
   @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     font-size: 40px;
-    left: 400px;
+    left: 350px;
     width: 300px;
     height: 100px;
     top: 235px;
