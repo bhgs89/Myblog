@@ -20,13 +20,13 @@ const MainTextContainer = styled.div`
     height: 380px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     height: 400px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     height: 400px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     height: 500px;
   }
 `;
@@ -51,17 +51,17 @@ const Image = styled.img`
     width: 530px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     left: 40px;
     width: 500px;
     height: 300px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     left: 60px;
     width: 600px;
     height: 300px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     height: 400px;
   }
 `;
@@ -97,21 +97,21 @@ const Header = styled.h1`
     width: 300px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     font-size: 40px;
     left: 350px;
     height: 100px;
     top: 235px;
     width: 300px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     font-size: 40px;
     left: 350px;
     width: 300px;
     height: 100px;
     top: 235px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     font-size: 40px;
     left: 490px;
     height: 100px;

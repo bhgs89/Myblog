@@ -11,7 +11,7 @@ const Container = styled.div`
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     grid-row-gap: 15px;
   }
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     grid-row-gap: 15px;
   }
 `;
@@ -37,15 +37,15 @@ const Work = styled.div`
     margin-left: 0px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 10px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 10px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 0px;
   }
@@ -63,13 +63,13 @@ const Subject = styled.h3`
     text-align: center;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     text-align: center;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     text-align: center;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     text-align: center;
   }
 `;
@@ -77,10 +77,12 @@ const List = styled.ul`
   list-style-position: inside;
   margin-top: 0;
   font-size: 17px;
+  margin-left: 0;
+
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     margin-left: 100px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     margin-left: 150px;
   }
 `;

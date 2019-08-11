@@ -13,13 +13,13 @@ const Container = styled.div`
     height: 500px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     height: 280px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     height: 280px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     height: 600px;
   }
 `;
@@ -37,13 +37,13 @@ const Image = styled.img`
     height: 500px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     height: 280px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     height: 280px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     height: 600px;
   }
 `;

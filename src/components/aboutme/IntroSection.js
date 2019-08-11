@@ -32,20 +32,24 @@ const IntroContainer = styled.div`
     height: 430px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     padding-top: 30px;
     width: 100%;
     height: 480px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     padding-top: 30px;
     width: 100%;
     height: 450px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     padding-top: 30px;
     width: 100%;
     height: 480px;
+  }
+  @media only screen and (min-width: 1281px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 const ImageContainer = styled.div`
@@ -62,6 +66,10 @@ const ImageContainer = styled.div`
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     height: 400px;
   }
+  @media only screen and (min-width: 1281px) {
+    text-align: right;
+    margin-right: 50px;
+  }
 `;
 const ProfileImage = styled.img`
   height: 350px;
@@ -74,10 +82,10 @@ const ProfileImage = styled.img`
     height: 250px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     height: 400px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 1280px) and (orientation: landscape) {
   }
 `;
 const ProfileContent = styled.div`

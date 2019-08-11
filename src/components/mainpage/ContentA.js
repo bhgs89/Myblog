@@ -26,17 +26,17 @@ const ContentContainer = styled.div`
     height: 500px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     padding-top: 30px;
     padding-bottom: 0;
     height: 280px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     padding-top: 30px;
     padding-bottom: 0;
     height: 280px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     padding-top: 60px;
     padding-bottom: 0;
     height: 600px;
@@ -56,13 +56,13 @@ const Header = styled.h1`
     font-size: 25px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     font-size: 25px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     font-size: 25px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     font-size: 30px;
   }
 `;
@@ -73,14 +73,14 @@ const Phylosophy = styled.div`
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     padding-top: 20px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     padding-top: 30px;
   }
 `;
 const PhylosophyContent = styled.p`
   text-align: left;
   text-indent: 25px;
-  font-size: 19px;
+  font-size: 22px;
   letter-spacing: 2px;
 
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
@@ -102,19 +102,19 @@ const PhylosophyContent = styled.p`
     letter-spacing: 2px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     text-align: center;
     text-indent: 0;
     font-size: 15px;
     letter-spacing: 1px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     text-align: center;
     text-indent: 0;
     font-size: 15px;
     letter-spacing: 1px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     text-align: left;
     text-indent: 20px;
     font-size: 25px;

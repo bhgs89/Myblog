@@ -11,11 +11,9 @@ const SubtextContainer = styled.div`
   background-color: #f0f0f5;
 `;
 const ContentContainer = styled.div`
-  @media only screen and (min-width: 1000px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 470px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 470px;
 
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     display: grid;
@@ -36,19 +34,19 @@ const ContentContainer = styled.div`
     height: 1000px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 560px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 560px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;

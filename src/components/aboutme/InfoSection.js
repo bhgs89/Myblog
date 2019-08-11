@@ -29,19 +29,19 @@ const InfoContainer = styled.div`
     height: 800px;
   }
 
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (max-device-width: 669px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 800px;
   }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (max-device-width: 733px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 800px;
   }
-  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1280px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
