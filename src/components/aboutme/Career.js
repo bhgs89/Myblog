@@ -8,10 +8,10 @@ const Container = styled.div`
   grid-row-gap: 30px;
   background-color: #f0f0f5;
 
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     grid-row-gap: 15px;
   }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     grid-row-gap: 15px;
   }
 `;
@@ -23,27 +23,27 @@ const Work = styled.div`
   display: grid;
   text-align: left;
   margin-left: 200px;
-  @media only screen and (device-width: 411px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     padding-left: 0;
     margin-left: 20px;
   }
-  @media only screen and (device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 10px;
   }
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-left: 0;
     margin-left: 20px;
   }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 10px;
   }
-  @media only screen and (device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     padding-left: 0;
     margin-left: 0px;
   }
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-left: 0;
     margin-left: 0px;
   }
@@ -51,22 +51,22 @@ const Work = styled.div`
 const Subject = styled.h3`
   text-align: left;
 
-  @media only screen and (device-width: 411px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     text-align: center;
   }
-  @media only screen and (device-width: 731px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     text-align: center;
   }
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     text-align: center;
   }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     text-align: center;
   }
-  @media only screen and (device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     text-align: center;
   }
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     text-align: center;
   }
 `;
@@ -74,10 +74,10 @@ const List = styled.ul`
   list-style-position: inside;
   margin-top: 0;
   font-size: 17px;
-  @media only screen and (device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     margin-left: 100px;
   }
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     margin-left: 150px;
   }
 `;

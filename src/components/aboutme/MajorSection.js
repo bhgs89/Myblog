@@ -13,21 +13,21 @@ const MajorContainer = styled.div`
 const MajorContent = styled.div`
   padding-top: 80px;
   text-align: center;
-  @media only screen and (device-width: 411px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     padding-top: 30px;
   }
-  @media only screen and (device-width: 731px) and (orientation: landscape) {
-    padding-top: 30px;
-  }
-
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
-    padding-top: 30px;
-  }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     padding-top: 30px;
   }
 
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    padding-top: 30px;
+  }
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    padding-top: 30px;
+  }
+
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-top: 30px;
   }
 `;
@@ -41,29 +41,29 @@ const ImageContainer = styled.div`
   padding-left: 600px;
   padding-right: 600px;
   margin-bottom: 100px;
-  @media only screen and (device-width: 411px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     padding-right: 30px;
     padding-left: 30px;
   }
-  @media only screen and (device-width: 731px) and (orientation: landscape) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     padding-right: 30px;
     padding-left: 30px;
   }
 
-  @media only screen and (device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-right: 30px;
     padding-left: 30px;
   }
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-right: 30px;
     padding-left: 30px;
   }
