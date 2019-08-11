@@ -11,9 +11,11 @@ const SubtextContainer = styled.div`
   background-color: #f0f0f5;
 `;
 const ContentContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 470px;
+  @media only screen and (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 470px;
+  }
 
   @media only screen and (device-width: 411px) and (orientation: portrait) {
     display: grid;
