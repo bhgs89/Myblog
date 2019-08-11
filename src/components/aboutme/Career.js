@@ -24,6 +24,14 @@ const Work = styled.div`
     padding-left: 0;
     margin-left: 10px;
   }
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    padding-left: 0;
+    margin-left: 20px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    padding-left: 0;
+    margin-left: 10px;
+  }
 `;
 const Subject = styled.h3`
   text-align: center;
