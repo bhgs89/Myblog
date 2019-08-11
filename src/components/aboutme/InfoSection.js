@@ -22,6 +22,18 @@ const InfoContainer = styled.div`
     grid-template-rows: 1fr 1fr;
     height: 800px;
   }
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 850px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 800px;
+  }
 `;
 const EducationContainer = styled.div`
   background-color: black;
