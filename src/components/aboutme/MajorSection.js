@@ -19,6 +19,13 @@ const MajorContent = styled.div`
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
     padding-top: 30px;
   }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    padding-top: 30px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    padding-top: 30px;
+  }
 `;
 const Languages = styled.div`
   display: grid;
@@ -35,6 +42,15 @@ const ImageContainer = styled.div`
     padding-left: 30px;
   }
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
     padding-right: 30px;
     padding-left: 30px;
   }

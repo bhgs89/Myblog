@@ -6,17 +6,17 @@ const Image = styled.img`
   height: 470px;
 
   @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
-    height: 300px;
+    height: 250px;
   }
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
-    height: 400px;
+    height: 280px;
   }
 
   @media only screen and (device-width: 375px) and (orientation: portrait) {
-    height: 220px;
+    height: 240px;
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
-    height: 380px;
+    height: 280px;
   }
 `;
 
