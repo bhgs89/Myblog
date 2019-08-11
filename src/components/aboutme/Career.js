@@ -7,6 +7,13 @@ const Container = styled.div`
   display: grid;
   grid-row-gap: 30px;
   background-color: #f0f0f5;
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    grid-row-gap: 15px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    grid-row-gap: 15px;
+  }
 `;
 const Header = styled.h2`
   text-transform: uppercase;
@@ -34,7 +41,20 @@ const Work = styled.div`
   }
 `;
 const Subject = styled.h3`
-  text-align: center;
+  text-align: left;
+
+  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+    text-align: center;
+  }
+  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    text-align: center;
+  }
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    text-align: center;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    text-align: center;
+  }
 `;
 const List = styled.ul`
   list-style-position: inside;
