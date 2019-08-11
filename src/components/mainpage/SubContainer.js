@@ -42,6 +42,19 @@ const ContentContainer = styled.div`
     grid-template-rows: 1fr 1fr;
     height: 560px;
   }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 1000px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 1200px;
+  }
 `;
 // Style End
 

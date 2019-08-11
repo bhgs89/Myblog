@@ -10,10 +10,10 @@ const MainTextContainer = styled.div`
   color: white;
   width: 100%;
 
-  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     height: 225px;
   }
-  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     height: 400px;
   }
 
@@ -22,6 +22,13 @@ const MainTextContainer = styled.div`
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     height: 400px;
+  }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 380px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    height: 500px;
   }
 `;
 const Image = styled.img`
@@ -40,6 +47,7 @@ const Image = styled.img`
     width: 600px;
     height: 300px;
   }
+
   @media only screen and (device-width: 375px) and (orientation: portrait) {
     left: 10px;
     width: 340px;
@@ -49,6 +57,14 @@ const Image = styled.img`
     left: 40px;
     width: 500px;
     height: 300px;
+  }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 320px;
+    width: 530px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    height: 400px;
   }
 `;
 // and (orientation: portrait)
@@ -88,6 +104,21 @@ const Header = styled.h1`
     left: 350px;
     height: 100px;
     top: 235px;
+    width: 300px;
+  }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    font-size: 40px;
+    left: 350px;
+    height: 100px;
+    top: 235px;
+    width: 300px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    font-size: 40px;
+    left: 490px;
+    height: 100px;
+    top: 315px;
     width: 300px;
   }
 `;

@@ -47,6 +47,15 @@ const List = styled.ul`
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     font-size: 15px;
   }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    font-size: 15px;
+    padding-left: 5px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    font-size: 15px;
+    padding-left: 5px;
+  }
 `;
 const ListElement = styled.li`
   margin-bottom: 8px;

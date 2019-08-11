@@ -16,6 +16,13 @@ const Container = styled.div`
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     height: 280px;
   }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 500px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    height: 600px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -33,6 +40,13 @@ const Image = styled.img`
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     height: 280px;
+  }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 500px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    height: 600px;
   }
 `;
 

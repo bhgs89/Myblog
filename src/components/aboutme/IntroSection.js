@@ -37,6 +37,17 @@ const IntroContainer = styled.div`
     width: 100%;
     height: 480px;
   }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    padding-top: 30px;
+    width: 100%;
+    height: 430px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    padding-top: 30px;
+    width: 100%;
+    height: 480px;
+  }
 `;
 const ImageContainer = styled.div`
   height: 450px;
@@ -48,6 +59,9 @@ const ImageContainer = styled.div`
   }
   @media only screen and (device-width: 375px) and (orientation: portrait) {
     padding-top: 60px;
+  }
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 400px;
   }
 `;
 const ProfileImage = styled.img`
@@ -88,6 +102,10 @@ const ProfileContent = styled.div`
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     padding-left: 10px;
+  }
+
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    height: 400px;
   }
 `;
 const Introduction = styled.div`

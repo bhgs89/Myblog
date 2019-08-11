@@ -39,6 +39,14 @@ const Work = styled.div`
     padding-left: 0;
     margin-left: 10px;
   }
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    padding-left: 0;
+    margin-left: 0px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    padding-left: 0;
+    margin-left: 0px;
+  }
 `;
 const Subject = styled.h3`
   text-align: left;
@@ -55,11 +63,23 @@ const Subject = styled.h3`
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     text-align: center;
   }
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    text-align: center;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    text-align: center;
+  }
 `;
 const List = styled.ul`
   list-style-position: inside;
   margin-top: 0;
   font-size: 17px;
+  @media only screen and (device-width: 768px) and (orientation: portrait) {
+    margin-left: 100px;
+  }
+  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+    margin-left: 150px;
+  }
 `;
 const ListElement = styled.li`
   margin-bottom: 8px;
