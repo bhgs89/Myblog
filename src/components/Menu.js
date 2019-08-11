@@ -13,9 +13,11 @@ const MenuContainer = styled.div`
 const MenuBar = styled.div`
   &.ui.secondary.pointing.menu {
     background-color: #1b1c1d;
+    right: 0;
+    left: 0;
     margin-top: 5px;
-    margin-left: 225px;
-    margin-right: 225px;
+    margin-left: 12%;
+    margin-right: 12%;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -26,19 +28,12 @@ const MenuBar = styled.div`
     display: flex;
     flex-direction: row;
     z-index: 50;
-    width: 80%;
 
     @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
-      margin: 0;
-      top: 10px;
-      left: 30px;
-      width: 350px;
+      top: 5px;
     }
     @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
-      margin: 0;
-      top: 10px;
-      left: 40px;
-      width: 600px;
+      top: 5px;
     }
   }
 `;
@@ -53,8 +48,7 @@ const MenuButton = styled(Link)`
   }
 `;
 const RightMenu = styled.div`
-  position: fixed;
-  right: 9%;
+  margin-left: auto;
 `;
 const ContactButton = styled.button`
   background-color: ${props => (props.modal ? 'white' : '#1b1c1d')};

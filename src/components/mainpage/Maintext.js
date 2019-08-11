@@ -16,6 +16,13 @@ const MainTextContainer = styled.div`
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
     height: 400px;
   }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    height: 280px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    height: 400px;
+  }
 `;
 const Image = styled.img`
   position: absolute;
@@ -31,6 +38,16 @@ const Image = styled.img`
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
     left: 60px;
     width: 600px;
+    height: 300px;
+  }
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    left: 10px;
+    width: 340px;
+    height: 225px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    left: 40px;
+    width: 500px;
     height: 300px;
   }
 `;
@@ -57,6 +74,21 @@ const Header = styled.h1`
     width: 300px;
     height: 100px;
     top: 235px;
+  }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    font-size: 20px;
+    left: 180px;
+    top: 180px;
+    width: 200px;
+    height: 100px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    font-size: 40px;
+    left: 350px;
+    height: 100px;
+    top: 235px;
+    width: 300px;
   }
 `;
 

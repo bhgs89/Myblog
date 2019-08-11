@@ -15,6 +15,13 @@ const ContentContainer = styled.div`
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
     padding-top: 30px;
   }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    padding-top: 30px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
+    padding-top: 30px;
+  }
 `;
 const Header = styled.h1`
   text-transform: uppercase;
@@ -23,6 +30,13 @@ const Header = styled.h1`
     font-size: 15px;
   }
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    font-size: 25px;
+  }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    font-size: 13px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
     font-size: 25px;
   }
 `;
@@ -43,6 +57,19 @@ const PhylosophyContent = styled.p`
     letter-spacing: 1px;
   }
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+    text-align: center;
+    text-indent: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  @media only screen and (device-width: 375px) and (orientation: portrait) {
+    text-align: center;
+    text-indent: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  @media only screen and (device-width: 667px) and (orientation: landscape) {
     text-align: center;
     text-indent: 0;
     font-size: 15px;
