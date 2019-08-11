@@ -80,8 +80,8 @@ const Header = styled.h1`
     font-size: 20px;
     left: 180px;
     top: 180px;
-    width: 200px;
-    height: 100px;
+    width: 180px;
+    height: 80px;
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     font-size: 40px;

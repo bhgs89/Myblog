@@ -9,18 +9,27 @@ const ContentContainer = styled.div`
   padding-bottom: 70px;
   text-align: center;
   height: 470px;
+
   @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
     padding-top: 30px;
+    padding-bottom: 0;
+    height: 250px;
   }
   @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
     padding-top: 30px;
+    padding-bottom: 0;
+    height: 280px;
   }
 
   @media only screen and (device-width: 375px) and (orientation: portrait) {
     padding-top: 30px;
+    padding-bottom: 0;
+    height: 240px;
   }
   @media only screen and (device-width: 667px) and (orientation: landscape) {
     padding-top: 30px;
+    padding-bottom: 0;
+    height: 280px;
   }
 `;
 const Header = styled.h1`
@@ -41,7 +50,7 @@ const Header = styled.h1`
   }
 `;
 const Phylosophy = styled.div`
-  width: 70%;
+  width: 80%;
   margin: auto;
 `;
 const PhylosophyContent = styled.p`
