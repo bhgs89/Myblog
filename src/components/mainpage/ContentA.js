@@ -10,32 +10,31 @@ const ContentContainer = styled.div`
   text-align: center;
   height: 470px;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    padding-top: 30px;
-    padding-bottom: 0;
-    height: 250px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    padding-top: 30px;
-    padding-bottom: 0;
-    height: 280px;
-  }
-
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-top: 30px;
     padding-bottom: 0;
     height: 240px;
   }
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    padding-top: 30px;
+    padding-bottom: 0;
+    height: 250px;
+  }
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    padding-top: 60px;
+    padding-bottom: 0;
+    height: 500px;
+  }
+
   @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     padding-top: 30px;
     padding-bottom: 0;
     height: 280px;
   }
-
-  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
-    padding-top: 60px;
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+    padding-top: 30px;
     padding-bottom: 0;
-    height: 500px;
+    height: 280px;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-top: 60px;
@@ -46,21 +45,21 @@ const ContentContainer = styled.div`
 const Header = styled.h1`
   text-transform: uppercase;
   font-size: 250%;
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    font-size: 15px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    font-size: 25px;
-  }
 
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     font-size: 13px;
   }
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    font-size: 15px;
+  }
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     font-size: 25px;
   }
 
-  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    font-size: 25px;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     font-size: 25px;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
@@ -84,10 +83,29 @@ const PhylosophyContent = styled.p`
   font-size: 19px;
   letter-spacing: 2px;
 
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+    text-align: center;
+    text-indent: 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
   @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     text-align: center;
     text-indent: 0;
     font-size: 12px;
+    letter-spacing: 1px;
+  }
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    text-align: left;
+    text-indent: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    text-align: center;
+    text-indent: 0;
+    font-size: 15px;
     letter-spacing: 1px;
   }
   @media only screen and (min-device-width: 731px) and (orientation: landscape) {
@@ -95,26 +113,6 @@ const PhylosophyContent = styled.p`
     text-indent: 0;
     font-size: 15px;
     letter-spacing: 1px;
-  }
-
-  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
-    text-align: center;
-    text-indent: 0;
-    font-size: 11px;
-    letter-spacing: 1px;
-  }
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
-    text-align: center;
-    text-indent: 0;
-    font-size: 15px;
-    letter-spacing: 1px;
-  }
-
-  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
-    text-align: left;
-    text-indent: 20px;
-    font-size: 20px;
-    letter-spacing: 2px;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     text-align: left;

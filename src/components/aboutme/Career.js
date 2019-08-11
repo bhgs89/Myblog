@@ -23,25 +23,27 @@ const Work = styled.div`
   display: grid;
   text-align: left;
   margin-left: 200px;
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    padding-left: 0;
-    margin-left: 20px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    padding-left: 0;
-    margin-left: 10px;
-  }
+
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-left: 0;
     margin-left: 20px;
   }
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     padding-left: 0;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     padding-left: 0;
     margin-left: 0px;
+  }
+
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    padding-left: 0;
+    margin-left: 10px;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+    padding-left: 0;
+    margin-left: 10px;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-left: 0;
@@ -51,19 +53,20 @@ const Work = styled.div`
 const Subject = styled.h3`
   text-align: left;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    text-align: center;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    text-align: center;
-  }
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     text-align: center;
   }
-  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     text-align: center;
   }
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    text-align: center;
+  }
+
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    text-align: center;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     text-align: center;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {

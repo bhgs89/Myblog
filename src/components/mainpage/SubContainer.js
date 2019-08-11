@@ -17,39 +17,38 @@ const ContentContainer = styled.div`
     height: 470px;
   }
 
-  @media only screen and (device-width: 411px) and (orientation: portrait) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 500px;
-  }
-  @media only screen and (device-width: 731px) and (orientation: landscape) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 560px;
-  }
-
-  @media only screen and (device-width: 375px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 480px;
   }
-  @media only screen and (device-width: 667px) and (orientation: landscape) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 560px;
+    height: 500px;
   }
-
-  @media only screen and (device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     height: 1000px;
   }
-  @media only screen and (device-width: 1024px) and (orientation: landscape) {
+
+  @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 560px;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 560px;
+  }
+  @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;

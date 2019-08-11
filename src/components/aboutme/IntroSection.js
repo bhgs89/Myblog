@@ -16,32 +16,31 @@ const IntroContainer = styled.div`
   padding-top: 80px;
   width: 60%;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    padding-top: 30px;
-    width: 100%;
-    height: 450px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    padding-top: 30px;
-    width: 100%;
-    height: 450px;
-  }
-
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-top: 30px;
     width: 100%;
     height: 480px;
   }
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    padding-top: 30px;
+    width: 100%;
+    height: 450px;
+  }
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    padding-top: 30px;
+    width: 100%;
+    height: 430px;
+  }
+
   @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     padding-top: 30px;
     width: 100%;
     height: 480px;
   }
-
-  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     padding-top: 30px;
     width: 100%;
-    height: 430px;
+    height: 450px;
   }
   @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
     padding-top: 30px;
@@ -54,10 +53,10 @@ const ImageContainer = styled.div`
   padding-top: 30px;
   right: 50px;
   text-align: center;
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-top: 60px;
   }
-  @media only screen and (min-device-width: 375px) and (orientation: portrait) {
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
     padding-top: 60px;
   }
   @media only screen and (min-device-width: 768px) and (orientation: portrait) {
@@ -68,17 +67,17 @@ const ProfileImage = styled.img`
   height: 350px;
   border-radius: 50%;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    height: 250px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-  }
-
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     height: 200px;
   }
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    height: 250px;
+  }
+
   @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     height: 400px;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
   }
 `;
 const ProfileContent = styled.div`
@@ -88,40 +87,40 @@ const ProfileContent = styled.div`
   padding-left: 50px;
   text-align: left;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    padding-left: 10px;
-    padding-right: 5px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    padding-left: 10px;
-  }
-
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     padding-left: 10px;
     padding-right: 5px;
   }
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
+    height: 400px;
+  }
+
   @media only screen and (min-device-width: 667px) and (orientation: landscape) {
     padding-left: 10px;
   }
-
-  @media only screen and (min-device-width: 768px) and (orientation: portrait) {
-    height: 400px;
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
+    padding-left: 10px;
   }
 `;
 const Introduction = styled.div`
   font-size: 16px;
   font-weight: 700px;
 
-  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
-    font-size: 10px;
-  }
-  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
-    font-size: 13px;
-  }
   @media only screen and (min-device-width: 375px) and (orientation: portrait) {
     font-size: 10px;
   }
+  @media only screen and (min-device-width: 411px) and (orientation: portrait) {
+    font-size: 10px;
+  }
+
   @media only screen and (min-device-width: 667px) and (orientation: landscape) {
+    font-size: 13px;
+  }
+  @media only screen and (min-device-width: 731px) and (orientation: landscape) {
     font-size: 13px;
   }
 `;
