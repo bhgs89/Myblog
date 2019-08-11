@@ -32,11 +32,11 @@ const SchoolContent = styled.div`
 const List = styled.ul`
   list-style-position: inside;
   font-size: 17px;
-  @media only screen and (min-device-width: 411px) and (max-device-width: 768px) and (orientation: portrait) {
+  @media only screen and (device-width: 411px) and (orientation: portrait) {
     font-size: 12px;
     padding-left: 5px;
   }
-  @media only screen and (min-device-width: 731px) and (max-device-width: 768px) and (orientation: landscape) {
+  @media only screen and (device-width: 731px) and (orientation: landscape) {
     font-size: 10px;
   }
 
